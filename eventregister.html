@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Form</title>
+  </head>
+
+  <body>
+    <h1>Event Registration Form</h1>
+
+    <form action="">
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <div class="full-name">
+          <label for="full-name">Full Name:</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            minlength="4"
+            placeholder="enter your name..."
+            required
+          />
+        </div>
+
+        <div class="email">
+          <label for="email">Email Address:</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="EMAIL_ADRESS"
+            required
+          />
+        </div>
+
+        <div class="phone-number">
+          <label for="phone-number">Phone Number:</label>
+          <input
+            id="phone-number"
+            name="phone-number"
+            type="tel"
+            placeholder="123-45-678"
+            required
+          />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Event Details</legend>
+
+        <div class="event-name">
+          <label for="event-name">Event Name:</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            minlength="3"
+            placeholder="enter event name..."
+            required
+          />
+        </div>
+
+        <div class="event-date">
+          <label for="event-date">Event Date:</label>
+          <input
+            id="date"
+            name="date"
+            type="date"
+            placeholder="mm/dd/yy"
+            required
+          />
+        </div>
+
+        <div class="event-location">
+          <label for="event-location">Event Location:</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="enter event location..."
+            required
+          />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Ticket Selection</legend>
+        <div>
+          <span>Choose Ticket Type:</span>
+        </div>
+
+        <div class="ticket">
+          <input id="standart" name="ticket" type="radio" checked />
+          <label for="standart">Standart</label><br />
+
+          <input id="VIP" name="ticket" type="radio" required />
+          <label for="VIP">VIP</label>
+        </div>
+
+        <div class="quantity">
+          <label for="quantity">Quantity:</label>
+          <input id="quantity" name="quantity" type="number" max="7" required />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Dietary Preferences</legend>
+        <div>
+          <span>Do you have any dietary preferences?</span>
+        </div>
+        <div class="vegetarian">
+          <input id="vegetarian" name="vegetarian" type="checkbox" />
+          <label for="vegetarian">Vegetarian</label>
+        </div>
+
+        <div class="vegan">
+          <input id="vegan" name="vegan" type="checkbox" />
+          <label for="vegan">Vegan</label>
+        </div>
+
+        <div class="gluten-free">
+          <input id="sight-seeing" name="gluten-free" type="checkbox" />
+          <label for="gluten-free">Gluten-Free</label>
+        </div>
+      </fieldset>
+
+      <div class="message-area">
+        <label for="message-area"></label>Additional Comments:<br />
+        <textarea
+          id="message-area"
+          name="message-area"
+          cols="50"
+          rows="7"
+          required
+        ></textarea>
+      </div>
+
+      <div class="subscribe">
+        <input id="subscribe" name="subscribe" type="checkbox" required />
+        <label for="subscribe">I agree to the terms and conditions</label>
+      </div>
+
+      <div>
+        <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </body>
+</html>
